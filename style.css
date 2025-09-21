@@ -1,0 +1,90 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f5f5f5;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 8px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+section {
+  margin: 30px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #222;
+  color: #eee;
+}
+
+.dark-mode section {
+  background: #333;
+}
+
+/* FAQ */
+.faq-question {
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  background: #007BFF;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px;
+  margin-top: 5px;
+  background: #e8e8e8;
+  border-radius: 5px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+#form-success {
+  color: green;
+  font-weight: bold;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 6 Assignment - Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Page with JavaScript</h1>
+    <button id="theme-toggle">🌞 Toggle Dark/Light Mode</button>
+  </header>
+
+  <main>
+    <!-- Interactive Section 1: FAQ -->
+    <section>
+      <h2>FAQ Section</h2>
+      <div class="faq">
+        <button class="faq-question">What is JavaScript?</button>
+        <div class="faq-answer">JavaScript is a programming language that adds interactivity to websites.</div>
+      </div>
+      <div class="faq">
+        <button class="faq-question">What is DOM?</button>
+        <div class="faq-answer">DOM stands for Document Object Model, which represents the structure of a webpage.</div>
+      </div>
+      <div class="faq">
+        <button class="faq-question">Why learn JavaScript?</button>
+        <div class="faq-answer">Because it makes websites dynamic, interactive, and engaging!</div>
+      </div>
+    </section>
+
+    <!-- Interactive Section 2: Form Validation -->
+    <section>
+      <h2>Sign Up Form</h2>
+      <form id="signup-form" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <small class="error" id="name-error"></small>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <small class="error" id="email-error"></small>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <small class="error" id="password-error"></small>
+
+        <button type="submit">Register</button>
+        <p id="form-success"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
